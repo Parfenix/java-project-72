@@ -7,7 +7,7 @@ clean:
 build:
 	make -C app build
 run:
-	make -C app start
+	make -C app run
 install:
 	make -C app install
 lint:
