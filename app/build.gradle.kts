@@ -33,6 +33,7 @@ dependencies {
     implementation("io.javalin:javalin:6.3.0")
     implementation("io.javalin:javalin-bundle:6.3.0")
     implementation("io.javalin:javalin-rendering:6.3.0")
+    implementation("com.konghq:unirest-java:3.14.5")
 
     testImplementation("org.assertj:assertj-core:3.26.3")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
