@@ -15,7 +15,7 @@ A site that analyzes specified pages for SEO suitability.
 * Make
 * JDK 21
 * Gradle 8.7
-* 
+
 ### Setup:
 ```sh
 $ git clone https://github.com/Parfenix/java-project-72.git && cd java-project-72
