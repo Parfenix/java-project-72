@@ -22,3 +22,5 @@ $ git clone https://github.com/Parfenix/java-project-72.git && cd java-project-7
 $ make install
 ```
 
+### Demo:
+https://java-page-analyzer-ru.hexlet.app/

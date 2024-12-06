@@ -25,8 +25,7 @@ public class App {
 
     public static void main(String[] args) throws SQLException, IOException {
         var app = getApp();
-        var port = Integer.parseInt(System.getenv().getOrDefault("PORT", "7070"));
-        app.start(port);
+        app.start(getPort());
     }
 
     public static Javalin getApp() throws IOException, SQLException {
@@ -56,6 +55,11 @@ public class App {
         app.post("/urls", UrlsController::create);
         app.post("/urls/{id}/checks", UrlChecksController::create);
         return app;
+    }
+
+    private static int getPort() {
+        var port = System.getenv().getOrDefault("PORT", "7070");
+        return Integer.valueOf(port);
     }
 
     private static String readResourceFile(String fileName) throws IOException {
